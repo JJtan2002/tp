@@ -27,7 +27,7 @@ public class PersonBuilder {
     private Email email;
     private Address address;
     private Set<Tag> tags;
-    private Set<Game> games;
+    private Map<String, Game> games;
 
     /**
      * Creates a {@code PersonBuilder} with the default details.
@@ -70,7 +70,7 @@ public class PersonBuilder {
     }
 
     /**
-     * Parses the {@code games} into a {@code Set<Game>} and set it to the {@code Person} that we are building.
+     * Parses the {@code games} into a {@code Map<String, Game>} and set it to the {@code Person} that we are building.
      */
     public PersonBuilder withGames(String ... games) {
         this.games = SampleDataUtil.getGameSet(games);

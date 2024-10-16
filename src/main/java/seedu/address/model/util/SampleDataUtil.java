@@ -62,7 +62,7 @@ public class SampleDataUtil {
     /**
      * Returns a tag set containing the list of strings given.
      */
-    public static Set<Game> getGameSet(String... strings) {
+    public static Map<String, Game> getGameSet(String... strings) {
         return Arrays.stream(strings)
                 .map(Game::new)
                 .collect(Collectors.toSet());

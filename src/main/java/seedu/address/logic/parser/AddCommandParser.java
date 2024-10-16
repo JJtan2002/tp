@@ -47,7 +47,7 @@ public class AddCommandParser implements Parser<AddCommand> {
         Email email = ParserUtil.parseEmail(argMultimap.getValue(PREFIX_EMAIL).get());
         Address address = ParserUtil.parseAddress(argMultimap.getValue(PREFIX_ADDRESS).get());
         Set<Tag> tagList = ParserUtil.parseTags(argMultimap.getAllValues(PREFIX_TAG));
-        Set<Game> gameList = ParserUtil.parseGames(argMultimap.getAllValues(PREFIX_GAME));
+        Map<String, Game> gameList = ParserUtil.parseGames(argMultimap.getAllValues(PREFIX_GAME));
 
         Person person = new Person(name, phone, email, address, tagList, gameList);
 

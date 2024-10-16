@@ -138,11 +138,11 @@ public class ParserUtil {
         return new Game(trimmedGame);
     }
     /**
-     * Parses {@code Collection<String> games} into a {@code Set<Game>}.
+     * Parses {@code Collection<String> games} into a {@code Map<String, Game>}.
      */
-    public static Set<Game> parseGames(Collection<String> games) throws ParseException {
+    public static Map<String, Game> parseGames(Collection<String> games) throws ParseException {
         requireNonNull(games);
-        final Set<Game> gameSet = new HashSet<>();
+        final Map<String, Game> gameSet = new HashSet<>();
         for (String gameName : games) {
             gameSet.add(parseGame(gameName));
         }
