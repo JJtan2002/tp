@@ -550,7 +550,7 @@ GamerBook Pro Max is a project built on the foundation of the original AddressBo
 
 ### Difficulty Level
 
-Adapting from the AddressBook to GamerBook Pro Max presented several challenges. While we retained core functionalities, we needed to significantly customize the app to better serve gamers. This included adding features like preferred game times, favorite games, and stateful command history, as well as implementing a powerful search feature.
+Adapting from the AddressBook to GamerBook Pro Max presented several challenges. While we retained core functionalities, we needed to significantly customize the app to better serve gamers. This included adding features like preferred game times, favorite games, and stateful command history, as well as implementing a powerful undo feature.
 
 The main difficulty lay in the number of advanced features we had to develop and integrate, as each new feature introduced additional complexity. As expected, more features resulted in more potential bugs, making debugging and testing a crucial part of the development process.
 
