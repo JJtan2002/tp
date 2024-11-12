@@ -560,13 +560,11 @@ The main difficulty lay in the number of advanced features we had to develop and
    Using the Forking Workflow allowed us to work on multiple features in parallel, which was vital given the size of the project. However, it also introduced the overhead of managing forks and dealing with frequent merge conflicts, especially as we worked on overlapping components such as the command history and address book state features.
 
 2. **Feature Complexity**:  
-   Many of the new features, like saving and loading address book states or command suggestions, required a careful design to ensure compatibility and stability across the system. We also had to ensure that stateful features, such as undoing and redoing commands, were correctly implemented and tested.
+   Many of the new features, like saving and loading address book states or command suggestions, required a careful design to ensure compatibility and stability across the system. We also had to ensure that stateful features, such as undoing commands, were correctly implemented and tested.
 
 3. **Testing and Regression**:  
    With the introduction of so many new commands and features, the effort required to write and maintain tests grew exponentially. Writing unit tests for every new feature, along with performing comprehensive regression testing to ensure that existing functionalities were not broken, added significant effort to the development cycle.
 
-4. **Design Decisions**:  
-   Making design decisions, such as implementing a robust time scheduling feature for gaming sessions, required balancing the user experience with technical constraints. We also had to consider scalability and future enhancements, which led to some complex decisions around data storage and retrieval.
 
 ### Effort Required
 
